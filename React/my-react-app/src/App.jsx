@@ -3,10 +3,19 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const name = "Usama";
+  const isLoggedIn = true;
 
   return (
-   <>Usama Bin Amjad here</>
+   <>
+     <div>
+      <h1>Hello, {name} 👋</h1>
+      <p>Welcome to React 19 learning!</p>
+      <p>Status: {isLoggedIn ? "Online ✅" : "Offline ❌"}</p>
+    </div>
+  </>
+
   )
 }
 
