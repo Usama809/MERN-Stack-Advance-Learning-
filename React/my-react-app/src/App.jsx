@@ -4,16 +4,34 @@ import './App.css'
 
 function App() {
 
-  const name = "Usama";
-  const isLoggedIn = true;
 
   return (
    <>
-     <div>
-      <h1>Hello, {name} 👋</h1>
-      <p>Welcome to React 19 learning!</p>
-      <p>Status: {isLoggedIn ? "Online ✅" : "Offline ❌"}</p>
-    </div>
+   {/* Navbar Start */}
+<div style={{
+  width: '100%',
+  background: '#222',
+  padding: '0 32px',
+  boxSizing: 'border-box',
+  display: 'flex',
+  alignItems: 'center',
+  height: '64px',
+  justifyContent: 'space-between',
+  marginBottom: '32px',
+}}>
+  {/* Left NavLinks */}
+  <div style={{ display: 'flex', gap: '24px' }}>
+    <a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: '500', fontSize: '1.1rem' }}>Home</a>
+    <a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: '500', fontSize: '1.1rem' }}>About</a>
+    <a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: '500', fontSize: '1.1rem' }}>Contact</a>
+  </div>
+  {/* Right NavLinks */}
+  <div style={{ display: 'flex', gap: '24px' }}>
+    <a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: '500', fontSize: '1.1rem' }}>Login</a>
+    <a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: '500', fontSize: '1.1rem' }}>Signin</a>
+  </div>
+</div>
+{/* Navbar End */}
 
     {/* Meal Cards Row Start */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', margin: '32px 0' }}>
@@ -49,7 +67,7 @@ function App() {
         overflow: 'hidden',
       }}>
         <img
-          src="https://images.unsplash.com/photo-1519864600265-abb23847ef61?auto=format&fit=crop&w=400&q=80"
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
           alt="Pasta Primavera"
           style={{ width: '100%', height: '180px', objectFit: 'cover' }}
         />
@@ -71,7 +89,7 @@ function App() {
         overflow: 'hidden',
       }}>
         <img
-          src="https://images.unsplash.com/photo-1464306076886-debede1a9b12?auto=format&fit=crop&w=400&q=80"
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
           alt="Veggie Burger"
           style={{ width: '100%', height: '180px', objectFit: 'cover' }}
         />
